@@ -1,5 +1,6 @@
 # Tweezer-Dynamics
 [![DOI](https://zenodo.org/badge/640364467.svg)](https://zenodo.org/badge/latestdoi/640364467)
+
 **A cluster optimized Python based simulation framework to simulate Rydberg tweezer of 1D dynamics utilizing tensor network methods.**
 
 
