@@ -3,5 +3,5 @@ matplotlib==3.7.1
 numpy==1.21.6
 pandas==1.4.2
 quimb==1.4.2
-qutip==4.7.0
+qutip==4.7.1
 tqdm==4.65.0
