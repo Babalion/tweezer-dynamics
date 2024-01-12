@@ -4,14 +4,14 @@
 **A cluster optimized Python based simulation framework to simulate 1D Rydberg tweezer dynamics utilizing tensor network methods.**
 
 
-The parameters of the simulation can be changed in `mps_simulation.py`. Different initial states and hamiltonians can be added in the file `tweezer_dynamics_utils.py`.
+The parameters of the simulation can be changed in `mpsPhonons.py`. Different initial states and hamiltonians can be added in the file `initialStatesClass.py`.
 
 During the simulation, after every timestep all results are stored to a new dataframe in HDF5 file format.
 This leads to large files with redundant values while adding a layer of security for timeouts or crashing simulations.
-Moreover, a SLURM array job launched with `runArrayJob.slurm` creates many of those files.
-To remove the redundancy and combine array result data after a successful simulation ,the script `minify_h5_results.py` can be used.
+Moreover, a SLURM array job launched with `runArray.slurm` creates many of those files.
+To remove the redundancy and combine array result data after a successful simulation ,the script `minify_h5.py` can be used.
 
-Data can be plotted and analyzed with `plot_dataset.py`.
+Data can be plotted and analyzed with `plotMultipleDataSets.py`.
 
 Old simulation data with corresponding figures can be found in `./data/`
 
@@ -36,4 +36,4 @@ The following features are supported already:
 - [ ]  Estimate errors of observables
 - [ ]  Add dissipative processes like radiative decay, dephasing etc.
 - [ ]  Specify different potentials for trapped and anti-trapped Rydberg atoms. Excited Rydberg atoms are less or even anti-trapped compared to well trapped ground-states. Not relevant, if traps are off. Maybe do Quench dynamics?
-- [ ] Do simulation with exact calculated pair-potential out of i.e. 
+- [ ] Do simulation with exact calculated pair-potential out of i.e. pairinteraction
